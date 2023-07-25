@@ -1,0 +1,46 @@
+{
+    "nav": {
+        "product": "Product",
+        "features": "Features",
+        "outlets": "Outlets",
+        "company": "Company"
+    },
+    "login": {
+        "login": "Log in"
+    },
+    "breadcrumb": {
+        "home": "Home",
+        "product": "Product",
+        "tables": "Tables"
+    },
+    "searchBar": {
+        "searchProduct": "Search Product"
+    },
+    "productPage": {
+        "stockLeft": "left in stock",
+        "moreInfo": "More Information"
+    },
+    "button": {
+        "addToCart": "Add to cart"
+    },
+    "footer": {
+        "contact": "Contact",
+        "clickAndCollect": "Click and Collect",
+        "help": "Help",
+        "customerService": "Customer service",
+        "openingHour": "Opening hours",
+        "delivery": "Delivery",
+        "address": "Address",
+        "faq": "FAQ",
+        "aboutCompany": "About Secundo",
+        "termsOfPurchase": "Terms of purchase",
+        "privacyStatement": "Privacy statement",
+        "categories": "Categories",
+        "furniture": "Furniture",
+        "sofaAndArmchairs": "Sofa and armchairs",
+        "toOffice": "To the office",
+        "appliances": "Appliances",
+        "rareFinds": "Rare finds",
+        "cheapHook": "The cheap hook"
+    }
+}

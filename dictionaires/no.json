@@ -1,0 +1,46 @@
+{
+    "nav": {
+        "product": "Produkt",
+        "features": "Egenskaper",
+        "outlets": "Utsalgssteder",
+        "company": "Selskap"
+    },
+    "login": {
+        "login": "Logg Inn"
+    },
+    "breadcrumb": {
+        "home": "Hjem",
+        "product": "Produkt",
+        "tables": "Tabeller"
+    },
+    "searchBar": {
+        "searchProduct": "Søk etter produkt"
+    },
+    "productPage": {
+        "stockLeft": "igjen på lager",
+        "moreInfo": "Mer informasjon"
+    },
+    "button": {
+        "addToCart": "Legg i handlekurv"
+    },
+    "footer": {
+        "contact": "Kontakt",
+        "clickAndCollect": "Klikk og hent",
+        "help": "Hjelp",
+        "customerService": "Kundeservice",
+        "openingHour": "Åpningstider",
+        "delivery": "Leveranse",
+        "address": "Adresse",
+        "faq": "FAQ",
+        "aboutCompany": "Om Secundo",
+        "termsOfPurchase": "Kjøpsbetingelser",
+        "privacyStatement": "Personvernerklæring",
+        "categories": "Kategorier",
+        "furniture": "Møbler",
+        "sofaAndArmchairs": "Sofa og lenestoler",
+        "toOffice": "Til kontoret",
+        "appliances": "Hvitevarer",
+        "rareFinds": "Sjeldne funn",
+        "cheapHook": "Den billige kroken"
+    }
+}
