@@ -4,7 +4,7 @@ const Footer: React.FC<FooterProps> = ({ params }) => {
   return (
     <footer>
       <div className="container mx-auto">
-        <div className="grid grid-rows-1 my-16 mx-24">
+        <div className="grid grid-rows-1 m-6 md:my-16 md:mx-24">
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10">
             <div className="col-span-1">
               <aside className="text-black">
