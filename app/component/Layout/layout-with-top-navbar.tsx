@@ -66,7 +66,7 @@ const LayoutWithTopNavbar: React.FC<LayoutWithTopNavbarProps> = ({
               href="#"
               className="text-sm font-semibold leading-6 text-gray-900"
             >
-              {params?.nav?.outlets}
+              {params?.nav?.furniture}
             </a>
             <a
               href="#"
