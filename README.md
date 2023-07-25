@@ -26,3 +26,14 @@ For senior developers, in addition to the basic requirements, we have the follow
 # Inspiration
 
 Candidates can draw inspiration from our [product page](https://www.secundo.no/produkt/mobler/salongbord-og-sidebord/retro-og-nett-salongbord-i-morkt-treverk/) or other e-commerce sites to create an engaging and user-friendly product page. You have the freedom to select and utilize tools and frameworks as you deem appropriate to complete the project.
+
+
+# Project setup and installion steps
+
+1. To install the dependencies of the project we have to run `yarn` to download the dependent modules.
+
+2. To run the test cases, run the command `yarn test` and it will run all the test associated with this repo.
+
+3. To run the development server, run the command `yarn dev`.
+
+4. To build a production build, run the command `yarn build`. There are no environment variables for this project.
