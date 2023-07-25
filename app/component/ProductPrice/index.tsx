@@ -8,7 +8,7 @@ const ProductPrice: React.FC<ProductPriceProps> = ({ price, discountedPrice }) =
       {isDiscounted && (
         <p className="text-sm text-gray-500 line-through mr-2">NOK {price.toFixed(2)}</p>
       )}
-      <p className={`text-xl font-bold ${isDiscounted ? 'text-red-600' : 'text-green-600'}`}>
+      <p className={`text-xl font-bold ${isDiscounted ? 'text-green-600' : 'text-gray-900'}`}>
         NOK {isDiscounted ? discountedPrice!.toFixed(2) : price.toFixed(2)}
       </p>
     </div>

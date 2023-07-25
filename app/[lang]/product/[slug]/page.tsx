@@ -54,7 +54,7 @@ const ProductPage = async ({
 
           <button
             disabled={isAddToCartDisabled}
-            className={`my-5 w-full bg-blue-500 hover:bg-blue-600 focus:outline-none focus:ring focus:ring-blue-300 active:bg-blue-700 text-white font-bold rounded px-4 py-2 ${isAddToCartDisabled ? 'opacity-50 cursor-not-allowed' : ''}`}
+            className={`my-2 w-full bg-blue-500 hover:bg-blue-600 focus:outline-none focus:ring focus:ring-blue-300 active:bg-blue-700 text-white font-bold rounded px-4 py-2 ${isAddToCartDisabled ? 'opacity-50 cursor-not-allowed' : ''}`}
           >
             {lang.button.addToCart}
           </button>
