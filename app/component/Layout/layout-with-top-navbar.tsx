@@ -50,18 +50,17 @@ const LayoutWithTopNavbar: React.FC<LayoutWithTopNavbarProps> = ({
             </button>
           </div>
           <div className="hidden lg:flex lg:gap-x-12">
-            <a
+          <a
               href="#"
               className="text-sm font-semibold leading-6 text-gray-900"
             >
-              {params?.nav?.sofaAndArmchairs}
+              {params?.nav?.outlets}
             </a>
-
             <a
               href="#"
               className="text-sm font-semibold leading-6 text-gray-900"
             >
-              {params?.nav?.furniture}
+              {params?.nav?.outlets}
             </a>
             <a
               href="#"
