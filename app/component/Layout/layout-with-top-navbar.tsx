@@ -1,9 +1,13 @@
 import Image from "next/image";
+import { LayoutWithTopNavbarProps } from "@/app/types/LayoutWithTopNavbar";
 
 const logoUrlPath =
   "https://eco-prod-bucket.s3.eu-west-1.amazonaws.com/wp-content/uploads/2022/09/29084448/secundo-logo-black.png";
 
-const LayoutWithTopNavbar = ({ children }: { children: React.ReactNode }) => {
+const LayoutWithTopNavbar: React.FC<LayoutWithTopNavbarProps> = ({
+  children,
+  params,
+}) => {
   return (
     <>
       <header className="bg-white">
@@ -50,26 +54,26 @@ const LayoutWithTopNavbar = ({ children }: { children: React.ReactNode }) => {
               href="#"
               className="text-sm font-semibold leading-6 text-gray-900"
             >
-              Sofa and armchairs
+              {params?.nav?.sofaAndArmchairs}
             </a>
 
             <a
               href="#"
               className="text-sm font-semibold leading-6 text-gray-900"
             >
-              Furniture
+              {params?.nav?.furniture}
             </a>
             <a
               href="#"
               className="text-sm font-semibold leading-6 text-gray-900"
             >
-              Outlets
+              {params?.nav?.outlets}
             </a>
             <a
               href="#"
               className="text-sm font-semibold leading-6 text-gray-900"
             >
-              Company
+              {params?.nav?.company}
             </a>
           </div>
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
@@ -77,7 +81,7 @@ const LayoutWithTopNavbar = ({ children }: { children: React.ReactNode }) => {
               href="#"
               className="text-sm font-semibold leading-6 text-gray-900"
             >
-              Log in <span aria-hidden="true">&rarr;</span>
+              {params?.login?.login} <span aria-hidden="true">&rarr;</span>
             </a>
           </div>
         </nav>

@@ -1,5 +1,5 @@
 import { render } from "@testing-library/react";
-import Footer from "../Footer";
+import Footer from "../index";
 import Language from "@/dictionaires/en.json";
 
 describe("Footer component", () => {

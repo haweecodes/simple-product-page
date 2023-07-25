@@ -1,13 +1,13 @@
 import "@/app/globals.css";
 import { Inter } from "next/font/google";
 import LayoutWithTopNavbar from "@/app/component/Layout/layout-with-top-navbar";
-import Breadcrumb from "../component/Breadcrumb/breadcrumb";
-import Footer from "../component/Footer";
-import BreadcrumbWrapper from "../component/Breadcrumb";
+import Breadcrumb from "../component/Breadcrumb";
+import Footer from "../component/Footer/index";
+import { getDictionary } from "../getDictionary";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
   params,
 }: {
@@ -16,12 +16,14 @@ export default function RootLayout({
     lang: string;
   };
 }) {
+  const lang = await getDictionary(params.lang);
+
   return (
     <html lang={params.lang}>
       <body className={inter.className}>
-        <LayoutWithTopNavbar>
-          <BreadcrumbWrapper params={params}>{children}</BreadcrumbWrapper>
-          <Footer params={params}></Footer>
+        <LayoutWithTopNavbar params={lang}>
+          <Breadcrumb params={lang}>{children}</Breadcrumb>
+          <Footer params={lang}></Footer>
         </LayoutWithTopNavbar>
       </body>
     </html>

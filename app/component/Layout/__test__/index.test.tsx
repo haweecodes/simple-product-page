@@ -1,10 +1,11 @@
 import { render } from "@testing-library/react";
 import LayoutWithTopNavbar from "../layout-with-top-navbar";
+import Language from '@/dictionaires/en.json'
 
 describe("Layout with top nav bar test", () => {
   const navBarMockProps = {
-    homeLabel: "Home",
     children: <div>Mock Children</div>,
+    params: Language
   };
 
   jest.mock("next/image", () => ({
