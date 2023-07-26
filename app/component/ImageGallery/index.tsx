@@ -1,18 +1,22 @@
 "use client";
-
 import React, { useState } from "react";
 import Image from "next/image";
 import { ImageGalleryProps } from "@/app/types/ImageGallery";
+import { useSwipeable } from "react-swipeable";
 
 const ImageGallery: React.FC<ImageGalleryProps> = ({ images, propKey }) => {
   const [currentImage, setCurrentImage] = useState(0);
+  const handlers = useSwipeable({
+    onSwipedLeft: () => handlePrevNext(-1),
+    onSwipedRight: () => handlePrevNext(1),
+  });
 
   const handlePrevNext = (step: number) => {
     setCurrentImage((prevImage) => (prevImage + step + images.length) % images.length);
   };
 
   return (
-    <div className="relative">
+    <div className="relative" {...handlers}>
       <Image
         className="w-full h-full object-contain"
         src={images[currentImage][propKey] as string}
