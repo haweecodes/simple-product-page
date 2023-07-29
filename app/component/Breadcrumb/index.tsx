@@ -37,7 +37,7 @@ const Breadcrumb: React.FC<BreadcrumbProps> = ({ params, children }) => {
           ))}
         </div>
 
-        <div className="relative w-full md:w-auto">
+        <div className="relative w-full md:w-96">
           <input
             type="search"
             id="default-search"

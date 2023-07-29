@@ -72,7 +72,7 @@ const ProductPage = async ({
       </div>
       <hr />
 
-      <div className="grid grid-rows-1 gap-4 mt-5">
+      <div className="grid grid-rows-1 gap-4 px-4 py-4">
         <SimilarProduct data={productData?.similar_product} params={lang} />
       </div>
       <hr />
