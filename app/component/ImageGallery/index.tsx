@@ -28,15 +28,15 @@ const ImageGallery: React.FC<ImageGalleryProps> = ({ images, propKey }) => {
       <div className="absolute top-1/2 left-0 right-0 flex justify-between px-4">
         <button
          onClick={() => handlePrevNext(-1)}
-          className="text-white font-bold bg-gray-800 rounded-full p-2 focus:outline-none"
+          className="text-black font-light text-lg rounded-full p-2 focus:outline-none"
         >
-          &larr;
+          {'<'}
         </button>
         <button
          onClick={() => handlePrevNext(1)}
-          className="text-white font-bold bg-gray-800 rounded-full p-2 focus:outline-none"
+          className="text-black font-light text-lg rounded-full p-2 focus:outline-none"
         >
-          &rarr;
+          {'>'}
         </button>
       </div>
     </div>

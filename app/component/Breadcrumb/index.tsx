@@ -16,7 +16,7 @@ const Breadcrumb: React.FC<BreadcrumbProps> = ({ params, children }) => {
 
   return (
     <>
-      <nav className="mx-auto flex max-w-7xl items-center p-6 lg:px-8 border justify-between flex-wrap md:flex-nowrap">
+      <nav className="mx-auto flex max-w-7xl items-center py-6 px-6 lg:px-8 lg:py-4 border justify-between flex-wrap md:flex-nowrap">
         <div id="breadcrumb" className="mb-2 md:mb-0">
           <a href="/" className="text-gray-600">
             {params?.breadcrumb?.home}

@@ -9,6 +9,7 @@ import SimilarProduct from "@/app/component/SimilarProduct";
 import Attribute from "@/app/component/Attribute";
 import { getProductData } from "@/app/requests/product.page";
 import { getDictionary } from "@/app/getDictionary";
+import AddToCartComponent from "@/app/component/AddToCart";
 
 export const metadata: Metadata = {
   title: "",
@@ -27,9 +28,6 @@ const ProductPage = async ({
 
   metadata.title = productData?.product?.name;
   metadata.description = productData?.product?.description || "";
-
-  const isAddToCartDisabled =
-    (productData?.product && productData.product?.amount < 1) ?? true;
 
   return (
     <div className="container mx-auto">
@@ -52,14 +50,7 @@ const ProductPage = async ({
             discountedPrice={productData?.product?.discounted_price}
           />
 
-          <button
-            disabled={isAddToCartDisabled}
-            className={`my-2 w-full bg-blue-500 hover:bg-blue-600 focus:outline-none focus:ring focus:ring-blue-300 active:bg-blue-700 text-white font-bold rounded px-4 py-2 ${
-              isAddToCartDisabled ? "opacity-50 cursor-not-allowed" : ""
-            }`}
-          >
-            {lang.button.addToCart}
-          </button>
+          <AddToCartComponent product={productData.product} params={lang} />
 
           <p className="text-gray-700 text-sm font-medium">
             {productData?.product.description}

@@ -3,6 +3,7 @@ import { ImageItem } from "./ImageGallery";
 import { Attribute } from "./Attribute";
 import { ReviewObject } from "./Rating";
 import { SimilarProductProp } from "./SimilarProductTypes";
+import { Dictionary } from "./Dictionary";
 
 export interface Product {
     header_title: string;
@@ -25,3 +26,8 @@ export interface ProductData {
 export interface ProductPageProps {
     data: ProductData;
 }
+export interface AddToCartProps {
+    product: Product;
+    params: Dictionary;
+  }
+  

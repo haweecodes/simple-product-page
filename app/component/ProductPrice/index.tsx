@@ -4,7 +4,7 @@ const ProductPrice: React.FC<ProductPriceProps> = ({ price, discountedPrice }) =
   const isDiscounted = discountedPrice !== 0 && discountedPrice && discountedPrice < price;
 
   return (
-    <div className="flex items-center">
+    <div className="flex items-center mb-5">
       {isDiscounted && (
         <p className="text-sm text-gray-500 line-through mr-2">NOK {price.toFixed(2)}</p>
       )}

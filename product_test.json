@@ -4,9 +4,9 @@
         "category": "Møbler",
         "subcategory": "Salongbord og sidebord",
         "name": "Retro og nett salongbord i mørkt treverk",
-        "amount": 1,
+        "amount": 5,
         "number_of_parts": 1,
-        "discounted_price": 0,
+        "discounted_price": 700,
         "selling_price": 790,
         "currency": "NOK",
         "description": "Retro og nett salongbord i mørkt treverk\n\nBordet har en enkel og nett stil som gjør at den passer inn i de fleste hjem.\n\nDen har en ripe på bordplaten og skruene er tredd nedover langs begge bordben i front - dette er avbildet.",
@@ -95,7 +95,7 @@
             {
                 "title": "Nyrenset | Lys grå Wrong For Hay 3-seter sofa i ullstoff med dunputer",
                 "selling_price": 2290,
-                "amount": 1,
+                "amount": 3,
                 "cart_image": "https://eco-prod-bucket.s3.eu-west-1.amazonaws.com/wp-content/uploads/2023/07/19094534/998332e4-5bb5-46b9-9d0d-73b97f313c20-300x300.png",
                 "hover_image": "https://eco-prod-bucket.s3.eu-west-1.amazonaws.com/wp-content/uploads/2023/07/19094530/998332e4-3417-487c-95c3-f78f17b9f845-300x300.png",
                 "url": "https://www.secundo.no/produkt/sofa-og-lenestoler/3-seter-sofa/nyrenset-lys-gra-wrong-for-hay-3-seter-sofa-i-ullstoff-med-dunputer/"
@@ -103,7 +103,7 @@
             {
                 "title": "Nyrenset | Lys grå 2-seter sofa",
                 "selling_price": 3490,
-                "amount": 1,
+                "amount": 4,
                 "cart_image": "https://eco-prod-bucket.s3.eu-west-1.amazonaws.com/wp-content/uploads/2023/07/05175726/99930ba8-a9d8-4b6e-8659-31928e8672be-300x300.png",
                 "hover_image": "https://eco-prod-bucket.s3.eu-west-1.amazonaws.com/wp-content/uploads/2023/07/05175730/99930ba8-9b15-464d-80d8-12d89f42d25d-300x300.png",
                 "url": "https://www.secundo.no/produkt/sofa-og-lenestoler/2-seter-sofa/nyrenset-lys-gra-2-seter-sofa/"
@@ -135,7 +135,7 @@
             {
                 "title": "Nyrenset | Brun/grønn Slettvoll Twin 1-seter sofa/hjørnemodul",
                 "selling_price": 790,
-                "amount": 1,
+                "amount": 5,
                 "cart_image": "https://eco-prod-bucket.s3.eu-west-1.amazonaws.com/wp-content/uploads/2023/07/19093845/9966ea22-ecf3-4cb1-a477-528d29d6de76-300x300.png",
                 "hover_image": "https://eco-prod-bucket.s3.eu-west-1.amazonaws.com/wp-content/uploads/2023/07/19093841/9966ea22-e310-40b6-aa82-dad9acb4a7e8-300x300.png",
                 "url": "https://www.secundo.no/produkt/sofa-og-lenestoler/lenestol/nyrenset-brun-gronn-slettvoll-twin-1-seter-sofa-hjornemodul/"
