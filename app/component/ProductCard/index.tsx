@@ -17,7 +17,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product, params }) => {
 
   return (
     <div
-      className="border rounded-lg overflow-hidden shadow-md p-4"
+      className="border rounded-lg shadow-md p-4 w-64"
       onMouseOver={handleMouseOver}
       onMouseOut={handleMouseOut}
       data-testid="product-card"
@@ -35,7 +35,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product, params }) => {
         rel="noopener noreferrer"
         data-testid="product-link"
       >
-        <h3 className="text-lg font-semibold mb-2 h-14 overflow-hidden line-clamp-2 hover:underline">
+        <h3 className="text-lg font-semibold mb-2 h-14 overflow-hidden text-ellipsis hover:underline">
           {product.title}
         </h3>
       </a>

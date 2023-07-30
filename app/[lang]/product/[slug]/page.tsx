@@ -34,13 +34,13 @@ const ProductPage = async ({
   return (
     <div className="container mx-auto">
       <div className="grid grid-cols-1 md:grid-cols-12 gap-4">
-        <div className="md:col-span-8">
+        <div className="md:col-span-6">
           <ImageGallery
             images={productData?.product?.images}
             propKey="url_link"
           />
         </div>
-        <div className="md:col-span-4 px-4 py-4">
+        <div className="md:col-span-6 px-4 py-4">
           <div className="font-bold text-xl mb-2">
             {productData?.product.name}
           </div>
@@ -54,12 +54,14 @@ const ProductPage = async ({
 
           <button
             disabled={isAddToCartDisabled}
-            className={`my-2 w-full bg-blue-500 hover:bg-blue-600 focus:outline-none focus:ring focus:ring-blue-300 active:bg-blue-700 text-white font-bold rounded px-4 py-2 ${isAddToCartDisabled ? 'opacity-50 cursor-not-allowed' : ''}`}
+            className={`my-2 w-full bg-blue-500 hover:bg-blue-600 focus:outline-none focus:ring focus:ring-blue-300 active:bg-blue-700 text-white font-bold rounded px-4 py-2 ${
+              isAddToCartDisabled ? "opacity-50 cursor-not-allowed" : ""
+            }`}
           >
             {lang.button.addToCart}
           </button>
 
-          <p className="text-gray-700 text-base">
+          <p className="text-gray-700 text-sm font-medium">
             {productData?.product.description}
           </p>
 
@@ -72,11 +74,8 @@ const ProductPage = async ({
       </div>
       <hr />
 
-      <div className="grid grid-rows-1 gap-4 px-4 py-4">
-        <SimilarProduct data={productData?.similar_product} params={lang} />
-      </div>
+      <SimilarProduct data={productData?.similar_product} params={lang} />
       <hr />
-
     </div>
   );
 };
